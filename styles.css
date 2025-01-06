@@ -6,8 +6,8 @@
 
 html {
     font-size: 18px;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #2234AE, #191714);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(to bottom, #000000, #130F40);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,10 +19,10 @@ body {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.66);
     color: #000;
 }
 
@@ -32,39 +32,44 @@ body {
 }
 
 .headerTitle {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #333;
 }
 
 .formContainer {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
-    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 5px;
 }
 
 .formInput {
-    border: 2px solid #ddd;
-    width: 200px;
-    height: 2.5rem;
+    border: 1px solid #ddd;
+    width: 125px;
+    height: 1.66rem;
     border-radius: 5px;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     font-size: 1rem;
     color: #333;
     background-color: #f5f5f5;
+    text-align: center;
 }
 
 .formButton {
     background-color: #0056b3;
     border: none;
     border-radius: 5px;
-    padding: 0 1.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 1.66rem;
     font-size: 1rem;
     font-weight: bold;
     color: #fff;
     cursor: pointer;
-    transition: background-color 0.5s;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .formButton:hover {
@@ -77,11 +82,10 @@ body {
     margin-bottom: 20px;
 }
 
-.budgetTable th,
-.budgetTable td {
+.budgetTable th, .budgetTable td {
     border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
+    padding: 5px;
+    text-align: center;
     color: #333;
 }
 
@@ -96,6 +100,23 @@ body {
 
 .balanceText {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.66rem;
+    font-weight: Bolder;
     color: #333;
+}
+
+.deleteButton {
+    background-color: #006bb3;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    width: 90px;
+    transition: background-color 0.3s;
+}
+
+.deleteButton:hover {
+    background-color: #178fdf;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
