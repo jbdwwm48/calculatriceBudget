@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice de Budget</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="calculatriceBudget.js" defer></script>
+</head>
+<body>
+    <header>
+        <section class="headerContainer">
+            <h1 class="headerTitle">Calculatrice de Budget</h1>
+        </section>
+    </header>
+    <main>
+        <div class="formContainer">
+            <input type="text" id="inputLabel" class="formInput" placeholder="Saisir un libellé">
+            <input type="number" id="inputAmount" class="formInput" placeholder="Saisir un montant">
+            <select id="inputType" class="formInput">
+                <option value="revenue">Revenu</option>
+                <option value="expense">Dépense</option>
+            </select>
+            <button class="formButton" id="addButton">Ajouter</button>
+        </div>
+        <table id="budgetTable" class="budgetTable">
+            <thead>
+                <tr>
+                    <th>Libellé</th>
+                    <th>Revenus</th>
+                    <th>Dépenses</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Les lignes seront ajoutées ici -->
+            </tbody>
+        </table>
+        <p id="balanceText" class="balanceText">Solde : <span id="balanceAmount">0</span> €</p>
+    </main>
+</body>
+</html>
